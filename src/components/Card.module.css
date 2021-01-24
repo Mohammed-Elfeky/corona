@@ -1,0 +1,23 @@
+.card{
+    box-sizing: border-box;
+    padding: 10px 20px;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+@media(max-width:440px){
+    .card{
+        margin-bottom: 15px;
+    }
+}
+.card p,.card h2{
+    margin: 0;
+}
+.cases{
+    box-shadow: 0px 3px 5px 0px rgba(204, 16, 52, .75);
+}
+.recoverd{
+    box-shadow: 0px 3px 5px 0px rgba(125, 215, 29, .75)
+}
+.deaths{
+    box-shadow: 0px 3px 5px 0px rgba(251, 68, 67, .75)
+}
