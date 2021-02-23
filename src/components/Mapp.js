@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import style from './Mapp.module.css'
 import { MapContainer as LeafletMap , TileLayer ,useMap} from "react-leaflet"
 import {drawCircles} from './drawCircles'
@@ -6,7 +6,7 @@ function Mapp({center,zoom,countriesForCircles,casesType}) {
 
     function ChangeView({ center, zoom }) {
         const map = useMap();
-        map.setView(center, zoom);
+        map.flyTo(center, zoom);
         return null;
       }
 

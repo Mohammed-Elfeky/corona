@@ -14,7 +14,7 @@ function DropDwon({dropDownCountries,setDropDownValue,dropDownValue,setSingleCou
         
         let theCountry= await fetch(url)
         let theCountryJson= await theCountry.json()
-
+        
         let coordinates= selectValue === 'worlwide'?
         [34.80746,-40.4098]:
         [theCountryJson.countryInfo.lat,theCountryJson.countryInfo.long]

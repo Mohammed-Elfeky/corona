@@ -22,7 +22,7 @@ function App() {
     const getCountries= async()=>{
       let countries=await fetch('https://disease.sh/v3/covid-19/countries')
       let jsonCountries=await countries.json()
-      console.log(jsonCountries)
+      
       setCountriesForCircles(jsonCountries)
       jsonCountries= jsonCountries.map(({country,cases})=>{
         return {
