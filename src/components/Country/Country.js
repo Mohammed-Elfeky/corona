@@ -1,4 +1,3 @@
-import React from 'react'
 import style from './Country.module.css'
 import numeral from 'numeral'
 function Country({country,cases}) {

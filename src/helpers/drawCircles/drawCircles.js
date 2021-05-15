@@ -1,4 +1,3 @@
-import React from "react"
 import {Circle,Popup} from 'react-leaflet'
 import numeral from 'numeral'
 import style from './popup.module.css'
@@ -17,7 +16,7 @@ const casesTypeColors = {
     },
   };
 
-export const drawCircles=(data,casesType)=>{
+const drawCircles=(data,casesType)=>{
     return data.map(country=>(
          <Circle
                center={[country.countryInfo.lat,country.countryInfo.long]}
@@ -48,26 +47,7 @@ export const drawCircles=(data,casesType)=>{
     ))
 } 
 
-export const chartCreating=(data,type='cases')=>{
-  const dataWillPushedToState=[]
-  const objectKeys=Object.keys(data[type])
-  objectKeys.forEach(ele=>{
-      if(objectKeys.indexOf(ele) !== 0){
-          let thePreviousElementIndex=(objectKeys.indexOf(ele))-1
-          let thePreviousElement=objectKeys[thePreviousElementIndex]
-          dataWillPushedToState.push(
-              {
-                  x:ele,
-                  y:data[type][ele]-data[type][thePreviousElement]
-              }
-          )
-      }
-      
-  })
+export default drawCircles;
 
-  return dataWillPushedToState
-}
 
-export const  sortCountries=(arr)=> {
-  return arr.sort(function (a, b) {return b.cases - a.cases})
-}
+

@@ -1,12 +1,12 @@
 import React ,{useState,useEffect} from 'react'
 import './App.css';
-import DropDown from './components/DropDwon'
-import Card from './components/Card'
+import DropDown from './components/DropDwon/DropDwon'
+import Card from './components/Card/Card'
 import 'leaflet/dist/leaflet.css'
-import Mapp from './components/Mapp'
-import Country from './components/Country'
-import Chart from './components/Chart'
-import {sortCountries} from './components/drawCircles'
+import Mapp from './components/Mapp/Mapp'
+import Country from './components/Country/Country'
+import Chart from './components/Chart/Chart'
+import sortCountries from './helpers/sortCountries'
 
 
 function App() {

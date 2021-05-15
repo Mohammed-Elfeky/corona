@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
 import style from './Card.module.css'
 import numeral from 'numeral'
-import {chartCreating} from './drawCircles'
+import chartCreating from '../../helpers/chartCreating'
 function Card({title,total,today,setCasesType,setData,casesType}) {
 
     const Classes={

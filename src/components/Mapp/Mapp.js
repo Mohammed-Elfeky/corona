@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './Mapp.module.css'
 import { MapContainer as LeafletMap , TileLayer ,useMap} from "react-leaflet"
-import {drawCircles} from './drawCircles'
+import drawCircles from '../../helpers/drawCircles/drawCircles'
 function Mapp({center,zoom,countriesForCircles,casesType}) {
 
     function ChangeView({ center, zoom }) {

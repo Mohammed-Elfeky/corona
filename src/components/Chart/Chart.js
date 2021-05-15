@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import {Line} from 'react-chartjs-2'
 import numeral from 'numeral'
-import {chartCreating} from './drawCircles'
+import chartCreating from '../../helpers/chartCreating'
 const options = {
     legend: {
       display: false,
